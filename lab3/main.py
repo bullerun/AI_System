@@ -92,18 +92,18 @@ print("Коэффицент детерминации для 3 модели", det
 result1 = np.insert(w1, 0, b1)
 col_names1 = ['a', 'Hours Studied', 'Previous Scores', 'Extracurricular Activities', 'Sleep Hours', 'Sample Question Papers Practiced']
 df1 = pd.DataFrame([result1], columns=col_names1)
-print(df1)
+print(df1.head())
 
 
 # вывод коэффициентов модели 2
 result2 = np.insert(w2, 0, b2)
 col_names2 = ['a', 'Sleep Hours', 'Sample Question Papers Practiced']
 df2 = pd.DataFrame([result2], columns=col_names2)
-print(df2)
+print(df2.head())
 
 
 # вывод коэффициентов модели 3
 result3 = np.insert(w3, 0, b3)
 col_names3 = ['a', 'Hours Studied', 'Previous Scores', 'Extracurricular Activities', 'Sleep Hours', 'Sample Question Papers Practiced', 'synthetics']
 df3 = pd.DataFrame([result3], columns=col_names3)
-print(df3)
+print(df3.head())
